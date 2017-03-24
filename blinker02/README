@@ -6,5 +6,11 @@ Like blinker01 this blinks an led.  But this uses TIMER0.  Was not
 obvious how this design works, but I can see the other perpherals
 work in a similar way.   It appears that we are using a 16MHz clock.
 
-I am thinking that this chip requires an oscillator and from the
-schematic that is a 16Mhz oscillator.  So this is making sense so far.
+There is perhaps an internal 16Mhz oscillator and an external one
+on the schematic.
+
+"When the system enters ON mode, HFCLK RC oscillator will start up
+automatically to provide the required clocks for the system."
+
+So lets assume that we are using the (internall) RC oscillator at this
+point.

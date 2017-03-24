@@ -55,8 +55,3 @@ The debug interface also provides a virtual uart ACM0, which the
 examples will use.
 
 It appears that we do not have a systick timer in this core, sigh.
-
-
-
-
-
