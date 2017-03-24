@@ -1,0 +1,7 @@
+
+See the previous level README for schematic and programmers reference
+information.
+
+This one does nothing, doesnt start up blinking leds or anything like
+that just dumps into an infinite loop
+

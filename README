@@ -1,0 +1,62 @@
+
+These are baremetal examples for the BBC micro:bit board.
+
+http://microbit.org/
+
+There are two microcontrollers one is basically the debug header
+it is what the usb plugs into, we dont program it we use it to
+get at the other microcontroller which we do program:
+
+Nordic nRF51822
+
+According to wikipedia
+
+16 MHz 32-bit ARM Cortex-M0 microcontroller
+256 KB flash memory
+16 KB static ram
+2.4 GHz Bluetooth low energy wireless networking
+
+The debug mcu provides an MBED type interface meaning the board will
+show up looking like a flash drive, you copy your binary to that
+drive and it will download that binary into the Nordic MCU and reset.
+
+So for example if you build blinker01 and copy notmain.bin to the
+drive that mounts when you plug in the board, then as the README in
+that directory describes one of the LEDs will start blinking.  It
+is programmed into flash so unplugging and re-plugging will still
+run that program.  (yes this overwrites the stock program that comes
+with the board, that is kind of the point here to make your own
+programs).
+
+If you go to their github site
+
+https://github.com/bbcmicrobit/
+
+specifically
+
+https://github.com/bbcmicrobit/hardware
+
+You can download the schematic for the board.
+
+Websites change but as of this writing if you go here
+
+https://www.nordicsemi.com/
+
+Then in the top right-ish click documentation it is very much like
+the ARM infocenter site (hmmm) expand nRF51 Series on the left side
+Then click on Reference Manual on the left side, then on the right
+click on the most recent version of reference manual.  Pretty much
+every other MCU site you go to the product page for that MCU and
+they have these kinds of documents there.  Also this document doesnt
+have a whole lot of pages which usually the manual with the register
+spec has hundreds of pages.  This has the register specs.
+
+The debug interface also provides a virtual uart ACM0, which the
+examples will use.
+
+It appears that we do not have a systick timer in this core, sigh.
+
+
+
+
+

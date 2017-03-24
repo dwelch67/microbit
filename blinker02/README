@@ -1,0 +1,10 @@
+
+See the previous level README for schematic and programmers reference
+information.
+
+Like blinker01 this blinks an led.  But this uses TIMER0.  Was not
+obvious how this design works, but I can see the other perpherals
+work in a similar way.   It appears that we are using a 16MHz clock.
+
+I am thinking that this chip requires an oscillator and from the
+schematic that is a 16Mhz oscillator.  So this is making sense so far.

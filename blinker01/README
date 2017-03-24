@@ -1,0 +1,11 @@
+
+See the previous level README for schematic and programmers reference
+information.
+
+From the schematic row1 is gpio pin 13 and col9 is gpio pin 12
+
+To light an led you need the row high and the column low, so we could
+make row1 high and make col9 go high/low or make col9 low and make
+row1 go high/low, so that is what this does.
+
+Blinks an led somewhere in the middle of the array.
