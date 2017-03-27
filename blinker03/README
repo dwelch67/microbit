@@ -1,0 +1,9 @@
+
+See the previous level README for schematic and programmers reference
+information.
+
+Figured out how rows and columns relate to the grid on the back, why
+did they label them row and col if those names only reflect the schematic
+not the layout?  Anyway.  This shows the gpio combinations for each
+led in the grid.
+

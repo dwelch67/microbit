@@ -1,0 +1,11 @@
+
+See the previous level README for schematic and programmers reference
+information.
+
+Took a little figuring out.  It doesnt assert txready until you have
+actually sent something, but you can clear txread by writing to it
+(and need to).  So if I want to do stuff while sending, I have to prime
+it by shooting out a character).
+
+Otherwise to poll it you write to txd, wait for txready then clear
+tx ready.
