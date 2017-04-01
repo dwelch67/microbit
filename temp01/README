@@ -1,0 +1,7 @@
+
+See the previous level README for schematic and programmers reference
+information.
+
+As described in the manual, you get one shot per start.  Not sure from
+the manual but perhaps the bit weight is 0.25C, so take the number and
+divide by 4 to get degrees C?

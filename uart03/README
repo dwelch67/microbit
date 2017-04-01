@@ -1,0 +1,9 @@
+
+See the previous level README for schematic and programmers reference
+information.
+
+Possibly because we are still using the internal oscillator, 115200
+is too fast so slowing down to 57600.  Makes the output much more
+reliable.
+
+Will revisit this if/when I use the external oscillator.
