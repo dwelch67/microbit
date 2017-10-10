@@ -33,18 +33,18 @@ void dummy ( unsigned int );
 static void uart_init ( void )
 {
     PUT32(GPIO_DIRSET,1<<24);
-    //PUT32(UART_BAUDRATE,0x01D7E000); //115200
-    PUT32(UART_BAUDRATE,0x00EBF000); //57600
+    PUT32(UART_BAUDRATE,0x01D7E000); //115200
+    //PUT32(UART_BAUDRATE,0x00EBF000); //57600
     PUT32(UART_PSELTXD,24);
     PUT32(UART_ENABLE,4);
     PUT32(UART_STARTTX,1);
-    PUT32(UART_TXD,0x00); //force txready
+//    PUT32(UART_TXD,0x00); //force txready
 }
 static void uart_send ( unsigned int x )
 {
+    PUT32(UART_TXD,x);
     while(GET32(UART_TXREADY)==0) continue;
     PUT32(UART_TXREADY,0);
-    PUT32(UART_TXD,x);
 }
 static void hexstrings ( unsigned int d )
 {
