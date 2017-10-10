@@ -1,0 +1,10 @@
+
+See the previous level README for schematic and programmers reference
+information.
+
+Okay, not ideal, normally want to send the character, go do other
+stuff, then before sending another check for txready/empty.  We can
+do that if we prime the pump.  So instead send the character then
+wait for it to go out.  We dont get the parallelism, but at least
+for a bit now it has not slipped a character at 115200.  Will see how
+it goes.
