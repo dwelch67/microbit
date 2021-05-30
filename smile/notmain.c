@@ -6,7 +6,6 @@ void dummy(unsigned int);
 #define GPIO_OUTCLR (GPIOBASE + 0x50C)
 #define GPIO_DIRSET (GPIOBASE + 0x518)
 
-// High/low grid
 unsigned char grid[5][5][2] = {
 	{{13, 4},{14, 7},{13, 5},{14, 8},{13, 6}},
 	{{15, 7},{15, 8},{15, 9},{15,10},{15,11}},

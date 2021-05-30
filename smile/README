@@ -1,0 +1,2 @@
+This is a simple demo that will create an image on the MicroBit  
+LED matrix. Type `make f=/media/username/MICROBIT` to test it.

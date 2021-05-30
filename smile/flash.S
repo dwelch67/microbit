@@ -30,6 +30,8 @@ reset:
 hang:
 	b .
 
+// Assembly routines instead of C for
+// speed
 .thumb_func
 .globl PUT32
 PUT32:
